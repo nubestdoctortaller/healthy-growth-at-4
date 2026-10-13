@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healthy Growth at Age 4: A Parent's Height Check</title>
+  <meta name="description" content="Most 4-year-olds grow 2 to 3 inches a year. Check your child's yearly growth, see typical heights at age 4, and learn which habits support healthy growth.">
+  <meta property="og:title" content="Healthy Growth at Age 4: A Parent's Height Check">
+  <meta property="og:description" content="Check your child's yearly growth, see typical heights at age 4, and learn which habits support healthy growth.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <p class="site-name">Healthy Growth at Age 4</p>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">How much did your child grow this year?</h1>
+        <p class="lede">Most 4-year-olds grow about 2 to 3 inches (5 to 7.5 cm) a year. Enter two measurements taken 6 to 24 months apart to see how your child's pace compares.</p>
+
+        <form class="checker" id="growth-form" novalidate>
+          <fieldset class="unit-switch">
+            <legend>Units</legend>
+            <label><input type="radio" name="unit" value="in" checked> Inches</label>
+            <label><input type="radio" name="unit" value="cm"> Centimeters</label>
+          </fieldset>
+
+          <div class="field">
+            <label for="height-then">Earlier height</label>
+            <input id="height-then" name="heightThen" type="number" inputmode="decimal" step="0.1" min="0" required>
+            <span class="unit-label" data-unit-label>in</span>
+          </div>
+
+          <div class="field">
+            <label for="height-now">Height today</label>
+            <input id="height-now" name="heightNow" type="number" inputmode="decimal" step="0.1" min="0" required>
+            <span class="unit-label" data-unit-label>in</span>
+          </div>
+
+          <div class="field">
+            <label for="months">Months between measurements</label>
+            <input id="months" name="months" type="number" inputmode="numeric" step="1" min="6" max="24" value="12" required>
+            <span class="unit-label">mo</span>
+          </div>
+
+          <button type="submit">Check yearly growth</button>
+        </form>
+
+        <div class="result" id="result" role="status" aria-live="polite"></div>
+      </div>
+
+      <figure class="doorframe" aria-hidden="true">
+        <svg id="ruler" viewBox="0 0 200 420" preserveAspectRatio="xMidYMid meet"></svg>
+        <figcaption>Pencil marks on the doorframe</figcaption>
+      </figure>
+    </section>
+
+    <section class="content" aria-labelledby="typical-title">
+      <h2 id="typical-title">What's typical at four</h2>
+      <p>Growth slows after the toddler years. Between ages 3 and 6, most children gain about 2 to 3 inches and 4 to 5 pounds a year, so a preschooler can wear the same clothing size for months at a time.</p>
+      <p>The CDC growth charts used by U.S. pediatricians show a wide healthy range at age 4:</p>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Height at age 4 on the CDC growth charts</caption>
+          <thead>
+            <tr><th scope="col">Percentile</th><th scope="col">Boys</th><th scope="col">Girls</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">5th</th><td>37.6 in (95.6 cm)</td><td>37.0 in (94.0 cm)</td></tr>
+            <tr><th scope="row">50th (median)</th><td>40.4 in (102.5 cm)</td><td>39.8 in (101.0 cm)</td></tr>
+            <tr><th scope="row">95th</th><td>43.1 in (109.5 cm)</td><td>42.7 in (108.4 cm)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Genetics sets most of where a child lands in that range. Children of taller parents tend to be taller, and children of shorter parents tend to be shorter.</p>
+    </section>
+
+    <section class="content" aria-labelledby="habits-title">
+      <h2 id="habits-title">Everyday habits that support growth</h2>
+      <p>No routine can push a child past their inherited range. These habits help make sure nothing holds growth back.</p>
+      <dl class="habits">
+        <div>
+          <dt>Sleep</dt>
+          <dd>10 to 13 hours in every 24, naps included. A child who has dropped the afternoon nap often needs an earlier bedtime.</dd>
+        </div>
+        <div>
+          <dt>Active play</dt>
+          <dd>About 3 hours of movement spread through the day, with at least an hour of energetic play. Keep sedentary screen time to an hour or less.</dd>
+        </div>
+        <div>
+          <dt>Varied meals</dt>
+          <dd>Around 1,000 mg of calcium and 600 IU of vitamin D a day for ages 4 to 8, plus zinc and iron. Extra food or extra vitamins won't add height.</dd>
+        </div>
+        <div>
+          <dt>Regular checkups</dt>
+          <dd>Well-child visits are where height is measured accurately and plotted over time.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="content" aria-labelledby="line-title">
+      <h2 id="line-title">Watch the line, not the dot</h2>
+      <p>A single measurement says little. What matters is whether your child keeps growing along roughly the same percentile line from one checkup to the next. A child who has stayed near the 10th percentile since age 2 is usually growing well. A child who has slipped from the 75th to the 40th percentile over a year is worth a closer look, even though they are still taller.</p>
+    </section>
+
+    <section class="content callout" aria-labelledby="doctor-title">
+      <h2 id="doctor-title">When to talk to your pediatrician</h2>
+      <ul>
+        <li>Your child's growth line drifts downward across percentile curves over several visits.</li>
+        <li>Your child measures at or below the 5th percentile.</li>
+        <li>Your child grows noticeably less than 2 to 3 inches over a full year.</li>
+        <li>Anything else about growth or development worries you.</li>
+      </ul>
+      <p>Most short children are healthy. A doctor can confirm it.</p>
+    </section>
+
+    <section class="content" aria-labelledby="more-title">
+      <h2 id="more-title">Read the full guide</h2>
+      <p>For an illustrated growth chart comparison, a sample daily routine for a 4-year-old, and the full list of sources, see <a href="https://doctortaller.com/blogs/growth-tips/how-to-grow-taller-at-4">How to Grow Taller at 4: A Parent's Guide to Healthy Growth</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>This page is for general education and isn't a substitute for advice from your child's pediatrician. Home measurements can vary by half an inch or more, so use the checker as a conversation starter, not a diagnosis.</p>
+    <p>Sources: CDC growth charts, American Academy of Sleep Medicine, World Health Organization, Institute of Medicine, American Academy of Pediatrics.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
